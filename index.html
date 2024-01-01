@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./css/port.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Raleway:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03d7e08649.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <nav>
+            <div class="logo">
+                <img src="./img/my_logo-removebg-preview.png">
+            </div>
+            <button id="toggle-btn">&#9776;</button>
+            <ul id="menu-toggle">
+                <li><a href="#bg">Home</a</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="men">
+        <div class="bg-img">
+
+            <!-- <img src="bg-img-.png"> -->
+            <div class="name">
+                <!-- <h3>Hi My Name Is</h3> -->
+                <h1>Minal Mistry <br><span class="txt-type" data-wait="3000"
+                        data-words='["UI/UX Designer", "Graphic Designer"]'></span></h1>
+                <h2>Welcome To My Website</h2>
+                <!-- <h2>UI/UX Designer</h2> -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ----about---- -->
+    <div class="About" id="about">
+        <div class="container">
+            <div class="row condiv-1">
+                <div class="about-col-1">
+                    <img src="./img/02.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Passionate About Learning New Skills In Desining.
+                        I Know The Role It Plays In Successfull Designer.<br>
+                        I know how to make websites look awesome on big computers, tiny phones, and everything in
+                        between.
+                        I love working with you to create the perfect website. You tell me your ideas and what you
+                        want,
+                        and I make it happen.
+                        It's like we're a team, and together we create something amazing that people will love to
+                        use.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Explore</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- <ul>
+                                <li><span>UI</span><br>Designing Web Interfaces</li>
+                                <li><span>Web Devlopment</span><br>Web Devlopment</li>
+                                <li><span>UI</span><br>Designing Web Interfaces</li>
+                            </ul> -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skill-container">
+                            <div class="card">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">HTML5</div>
+                            </div>
+                            <div class="card js">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">CSS3</div>
+                            </div>
+                            <div class="card react">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">JavaScript</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="skill-container">
+                            <div class="card illustrator">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Illustrator</div>
+                            </div>
+                            <div class="card photoshop">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Photoshop</div>
+                            </div>
+                            <div class="card animate">
+                                <div class="circle">
+                                    <div class="bar"></div>
+                                    <div class="box"><span></span></div>
+                                </div>
+                                <div class="text">Animate</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul class="f-size">
+                            <li><span>1</span><br>3d Website</li>
+                            <li><span>2</span><br>Back-end Devlopment</li>
+                            <li><span>3</span><br>Fullstack</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul class="f-size">
+                            <li><span>2022</span><br>Web & Graphic Learning at Arena Animation</li>
+                            <li><span>2017</span><br>Diploma IT Engineering</li>
+                            <li><span>Current</span><br>Intership At DigiNull</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ----about---- -->
+
+
+
+    <!-- *****hire-btn***** -->
+    <div class="hire-me">
+        <div class="box-1">
+            <div class="hire-text">
+
+                <p>I'm
+                    <span class="text-clr">Available</span>
+                    For Freelancing
+                </p>
+            </div>
+
+            <div class="btn-hire">
+                <p class="btn-1">
+                    <a href="#contact" class="hire-1">Hire Me</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ----service---- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----service---- -->
+
+
+
+
+    <!-- ----portfolio---- -->
+    <section>
+        <h2 class="my-work" id="project">My Projects</h2>
+        <h3 class="my-work-1">Graphic Work</h3>
+        <div class="project">
+            <div class="project-box gw-1">
+
+            </div>
+            <div class="project-box gw-2">
+
+            </div>
+            <div class="project-box gw-3">
+
+            </div>
+        </div>
+
+        <h3 class="my-work-1">websites</h3>
+        <div class="project-1">
+            <div class="webbox">
+
+                <iframe src="./web-band.html" frameborder="0" width="100%" height="400"></iframe>
+            </div>
+            <div class="webbox">
+                <iframe src="./Nasa/index.html" frameborder="0" width="100%" height="400"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----portfolio---- -->
+
+    <div class="btn-main-1">
+        <a href="MInal Mistry (1).pdf" download class="btn-1 btn-2">Download CV</a>
+    </div>
+
+
+
+    <!-- *****contact div start***** -->
+    <section>
+        <h2 class="contact" id="contact">Contact Me</h2>
+        <div class="con-box">
+            <div class="con-box-1">
+                <div class="box-1-img">
+                    <img src="./img/vector.jpg">
+                </div>
+            </div>
+
+
+            <div class="con-box-2">
+                <div class="form-group">
+                    <input class="form-box" type="text" id="name" name="name" placeholder="Your Name"><br>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-box" type="text" id="email" name="email" placeholder="Your Email"><br>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-box" type="subject" id="subject" name="subject" placeholder="subject"><br>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-box msg-box" name="message" placeholder="Message"></textarea></label><br>
+                </div>
+                <input class="btn" type="submit" value="Send Message">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------ -->
+
+
+
+    <!-- rocket div start -->
+    <div class="rocket-main">
+        <div class="rimg-1">
+            <a href="#container"><img src="./img/up-arrrows_10631141-removebg-preview.png" alt="Rocket"></a>
+        </div>
+        <!-- <div class="rimg-2">
+            <img src="./rocket-022.png" alt="Rocket">
+        </div> -->
+    </div>
+
+    <!-- rocket div end -->
+
+
+
+    <!-- -----script tag start----- -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+
+
+    </script>
+    <script>
+        function yourFunction() {
+            // Your code to be executed when the user scrolls to a particular height
+            let options = {
+                startAngle: -1.55,
+                size: 150,
+                value: 0.95,
+                fill: { gradient: ['#a445b2', '#fa4299'] }
+            }
+            $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                function (event, progress, stepValue) {
+                    $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                });
+            $(".js .bar").circleProgress({
+                value: 0.70
+            });
+            $(".react .bar").circleProgress({
+                value: 0.60
+            });
+            $(".illustrator .bar").circleProgress({
+                value: 0.85
+            });
+            $(".photoshop .bar").circleProgress({
+                value: 0.80
+            });
+            $(".animate .bar").circleProgress({
+                value: 0.75
+            });
+            setTimeout(() => {
+                window.open("https://medium.com/@nitinmaurya969543")
+            }, 50)
+
+            // Set a flag to indicate that the function has been executed
+            hasFunctionRun = true;
+        }
+
+        // Replace 'yourHeight' with the pixel height at which you want to trigger the function
+        var scrollHeight = 500; // Change this value to your desired height
+
+        // Flag to check if the function has already run
+        var hasFunctionRun = false;
+
+        window.onscroll = function () {
+            // Check if the user has scrolled to the specified height and the function hasn't run yet
+            if (
+                !hasFunctionRun &&
+                (document.body.scrollTop > scrollHeight || document.documentElement.scrollTop > scrollHeight)
+            ) {
+                yourFunction(); // Call your function
+            }
+        };
+    </script>
+
+
+    <script>
+        class TypeWriter {
+            constructor(txtElement, words, wait = 3000) {
+                this.txtElement = txtElement;
+                this.words = words;
+                this.txt = '';
+                this.wordIndex = 0;
+                this.wait = parseInt(wait, 10);
+                this.type();
+                this.isDeleting = false;
+            }
+            // instead of creating a prototpe method, we would just create a method within the class - a method called type
+            // everything within the type method is going to be exactly the same thing
+
+            type() {
+                // Current index of word
+                // We use the modulus operator to get the total length of the words
+                const current = this.wordIndex % this.words.length;
+                // console.log(current);
+
+                // Get full text of current word
+                const fullTxt = this.words[current];
+                // console.log(fullTxt);
+
+                // Check to see if it's in the deleting state
+                if (this.isDeleting) {
+                    // Remove a character
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    // Add a character
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                // Every half a second output what is in the .txt
+                // Insert txt into element
+                this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+                // Initial Type Speed
+                let typeSpeed = 300;
+                if (this.isDeleting) {
+                    typeSpeed /= 2;
+                }
+                // Check to see if the word is complete
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    // Make pause at end
+                    typeSpeed = this.wait;
+                    // Set isDeleting to true
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    // Set isDeleting back to false
+                    this.isDeleting = false;
+                    // Move to the next word
+                    this.wordIndex++;
+                    // Pause before start typing again
+                    typeSpeed = 500;
+                }
+
+
+                // Run it at a certain pace
+                setTimeout(() => this.type(), typeSpeed);
+
+            }
+        }
+
+
+
+        // Initialize on DOM Load
+        document.addEventListener('DOMContentLoaded', init);
+
+        // Initialize the app in the init function
+        function init() {
+            const txtElement = document.querySelector('.txt-type');
+            const words = JSON.parse(txtElement.getAttribute('data-words'));
+            const wait = txtElement.getAttribute('data-wait')
+            // Initialize the TypeWriter
+            new TypeWriter(txtElement, words, wait);
+        }
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#toggle-btn").click(function () {
+                $("#menu-toggle").toggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
